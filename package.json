@@ -1,0 +1,18 @@
+{
+  "name": "restro-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Restaurant ordering system: dine-in QR, takeaway and delivery",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev --workspace apps/api",
+    "dev:web": "npm run dev --workspace apps/web",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
